@@ -45,7 +45,8 @@ if [ `whoami` != "root" ];then
 fi
 
 #非官方安装
-github_Url=https://github.com/Vultur/bt-panel
+github_Url=https://github.com/Vultur/bt-panel/archive
+github_Tag=5.3.0
 
 #自动选择下载节点
 CN='125.88.182.172'
@@ -324,7 +325,7 @@ mkdir -p /www/wwwlogs
 mkdir -p /www/backup/database
 mkdir -p /www/backup/site
 
-wget -O panel.zip $github_Url/archive/master.zip -T 10
+wget -O panel.zip $github_Url/archive/$github_Tag.zip -T 10
 wget -O /etc/init.d/bt $download_Url/install/src/bt.init -T 10
 if [ -f "$setup_path/server/panel/data/default.db" ];then
 	if [ -d "/$setup_path/server/panel/old_data" ];then
@@ -340,6 +341,8 @@ if [ -f "$setup_path/server/panel/data/default.db" ];then
 fi
 
 unzip -o panel.zip -d $setup_path/server/ > /dev/null
+mv -f $setup_path/server/bt-panel-$github_Tag/* $setup_path/server/panel
+rm -rf $setup_path/server/bt-panel-$github_Tag
 
 if [ -d "$setup_path/server/panel/old_data" ];then
 	mv -f $setup_path/server/panel/old_data/default.db $setup_path/server/panel/data/default.db
