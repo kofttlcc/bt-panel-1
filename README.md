@@ -29,28 +29,41 @@ Windows版支持 2003(x86)/2008(x64)/2012/2016 系统，支持Web端与软件端
 
 
 
-# 安装使用
+# 开始使用
 
-## Centos安装命令
+## 克隆代码
 
-`yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh`
+`git clone https://github.com/Vultur/bt-panel.git`
 
-## Ubuntu/Deepin安装命令
+## 一键安装
 
-`wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && sudo bash install.sh`
+### CentOS
 
-## Debian安装命令
+```
+cd bt-panel
+sh install.sh
+```
 
-`wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && bash install.sh`
+### Ubuntu/Debian
 
-## Fedora安装命令
+```
+cd bt-panel
+sudo bash install.sh
+```
 
-`wget -O install.sh http://download.bt.cn/install/install.sh && bash install.sh`
+### Debian/Fedora
 
+```
+cd bt-panel
+bash install.sh
+```
 
 ## 更新命令（仅限3.X/4.X面板使用！不支持2.X面板）
 
-`wget -O update.sh http://download.bt.cn/install/update.sh && sh update.sh 5.3.0`
+```
+cd www/server/panel
+sh update.sh 5.3.0
+```
 
 若点击更新后没生效，请尝试重启面板服务：
 
