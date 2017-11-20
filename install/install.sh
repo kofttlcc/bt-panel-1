@@ -2,16 +2,16 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 LANG=en_US.UTF-8
-if [ -f "/usr/bin/apt-get" ];then
-	isDebian=`cat /etc/issue|grep Debian`
-	if [ "$isDebian" != "" ];then
-		wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && bash install.sh
-		exit;
-	else
-		wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && sudo bash install.sh
-		exit;
-	fi
-fi
+# if [ -f "/usr/bin/apt-get" ];then
+# 	isDebian=`cat /etc/issue|grep Debian`
+# 	if [ "$isDebian" != "" ];then
+# 		wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && bash install.sh
+# 		exit;
+# 	else
+# 		wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && sudo bash install.sh
+# 		exit;
+# 	fi
+# fi
 
 echo "
 +----------------------------------------------------------------------
@@ -22,6 +22,9 @@ echo "
 | The WebPanel URL will be http://SERVER_IP:8888 when installed.
 +----------------------------------------------------------------------
 "
+#非官方安装
+github_Url=https://github.com/Vultur/bt-panel
+
 #自动选择下载节点
 CN='125.88.182.172'
 HK='download.bt.cn'
@@ -406,7 +409,7 @@ if [ ! -f "/usr/bin/unzip" ];then
 	#rm -f /etc/yum.repos.d/epel.repo
 	yum install unzip -y
 fi
-wget -O panel.zip $download_Url/install/src/panel.zip -T 10
+wget -O panel.zip $github_Url/archive/master.zip -T 10
 wget -O /etc/init.d/bt $download_Url/install/src/bt.init -T 10
 if [ -f "$setup_path/server/panel/data/default.db" ];then
 	if [ -d "/$setup_path/server/panel/old_data" ];then
