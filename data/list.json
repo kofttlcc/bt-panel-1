@@ -137,7 +137,7 @@
         "ps": "快速部署常用程序!",
         "shell": "deployment.sh",
         "name": "deployment",
-        "title": "宝塔一键部署源码",
+        "title": "一键部署源码",
         "default": false,
         "pid": 18,
         "versions": "1.0",

@@ -1,5 +1,5 @@
 {
-	"NAME":"宝塔Linux面板",
+	"NAME":"BT Panel",
 	"BRAND":"宝塔",
 	"PRODUCT":"Linux面板",
 	"PAGE_ERR_TITLE":"拒绝访问",
@@ -258,7 +258,7 @@
 	"SSL_CHECK_WRITE_ERR":"验证信息写入失败!",
 	"SSL_CHECK_DNS_ERR":"以下域名解析不正确，或解析未生效!<li style='color:red;'>{1}</li>",
 	"SSL_GET_SUCCESS":"获取成功!",
-	"SSL_NOT_BTUSER":"请绑定宝塔帐户!",
+	"SSL_NOT_BTUSER":"请绑定帐户!",
 	"SSL_BTUSER_UN":"已解除绑定!",
 	"WAF_NOT_NGINX":"当前只支持Nginx",
 	"WAF_NOT_NGINX_VERSION":"您当前的Nginx未安装WAF支持，请重新安装Nginx!",

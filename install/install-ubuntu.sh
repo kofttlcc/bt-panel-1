@@ -34,7 +34,7 @@ if [[ "${deepinSys}" =~ eepin ]]; then
 			/usr/lib/firefox/firefox http://localhost:$port
 			exit;
 		fi
-		echo -e "找不到chrome/firefox浏览器，请自行打开浏览器访问宝塔面板: http://loshost:$port"
+		echo -e "找不到chrome/firefox浏览器，请自行打开浏览器访问: http://loshost:$port"
 		exit;
 
 	fi
