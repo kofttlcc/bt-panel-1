@@ -333,7 +333,7 @@ var lan = {
 		"install_ok":"已将安装请求添加到安装器",
 		"task_add":"已添加到队列",
 		"panel_open":"正在打开面板...",
-		"panel_add":"关联宝塔面板",
+		"panel_add":"关联面板",
 		"panel_edit":"修改关联",
 		"panel_err_format":"面板地址格式不正确，示例：",
 		"panel_err_empty":"面板资料不能为空",

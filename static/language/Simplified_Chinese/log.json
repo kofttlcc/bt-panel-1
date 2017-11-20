@@ -40,7 +40,7 @@
 	"SOFT_PHPMYADMIN_STATUS":"PHPMyAdmin已{1}!",
 	"SOFT_PHPMYADMIN_PHP":"修改PHPMyAdmin运行PHP版本为PHP-{1}!",
 	"SOFT_PHPMYADMIN_PORT":"修改PHPMyAdmin访问端口为{1}!",
-	"LOG_CLOSE":"面板操作日志已清空!",
+	"LOG_CLOSE":"日志已清空!",
 	"KILL_PROCESS":"结束进程[{1}][{2}]成功!",
 	"USER_PASSWORD_SUCCESS":"修改用户[{1}]密码成功!",
 	"USER_USERNAME_SUCCESS":"用户名从[{1}]修改为[{2}]",

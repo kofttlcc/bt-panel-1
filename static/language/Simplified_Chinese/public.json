@@ -109,7 +109,7 @@
 	"SOFT_PHPVERSION_PS":"新的phpMyAdmin端口",
 	"SOFT_PHPVERSION_ERR_PORT":"与当前端口相同，无需修改!",
 	"SOFT_PHPVERSION_ERR_PORT_RE":"不能和面板设为同一端口!",
-	"LOG_CLOSE":"面板操作日志已清空!",
+	"LOG_CLOSE":"日志已清空!",
 	"KILL_PROCESS":"结束进程[{1}][{2}]成功!",
 	"KILL_PROCESS_ERR":"失败，无法结束此进程!",
 	"USER_PASSWORD_CHECK":"两次输入的密码不一致，请重新输入!",
