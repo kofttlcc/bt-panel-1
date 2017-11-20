@@ -23,7 +23,8 @@ echo "
 +----------------------------------------------------------------------
 "
 #非官方安装
-github_Url=https://github.com/Vultur/bt-panel
+github_Url=https://github.com/Vultur/bt-panel/archive
+github_Tag=5.3.0
 
 #自动选择下载节点
 CN='125.88.182.172'
@@ -409,7 +410,7 @@ if [ ! -f "/usr/bin/unzip" ];then
 	#rm -f /etc/yum.repos.d/epel.repo
 	yum install unzip -y
 fi
-wget -O panel.zip $github_Url/archive/master.zip -T 10
+wget -O panel.zip $github_Url/archive/$github_Tag.zip -T 10
 wget -O /etc/init.d/bt $download_Url/install/src/bt.init -T 10
 if [ -f "$setup_path/server/panel/data/default.db" ];then
 	if [ -d "/$setup_path/server/panel/old_data" ];then
@@ -425,6 +426,7 @@ if [ -f "$setup_path/server/panel/data/default.db" ];then
 fi
 
 unzip -o panel.zip -d $setup_path/server/ > /dev/null
+mv -f $setup_path/server/bt-panel-$github_Tag/* ./
 
 if [ -d "$setup_path/server/panel/old_data" ];then
 	mv -f $setup_path/server/panel/old_data/default.db $setup_path/server/panel/data/default.db
@@ -440,6 +442,7 @@ if [ -d "$setup_path/server/panel/old_data" ];then
 fi
 
 rm -f panel.zip
+rm -rf $setup_path/server/bt-panel-$github_Tag/*
 
 if [ ! -f $setup_path/server/panel/tools.py ];then
 	echo -e "\033[31mERROR: Failed to download, please try again!\033[0m";
