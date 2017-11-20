@@ -427,6 +427,7 @@ fi
 
 unzip -o panel.zip -d $setup_path/server/ > /dev/null
 mv -f $setup_path/server/bt-panel-$github_Tag/* ./
+rm -rf $setup_path/server/bt-panel-$github_Tag
 
 if [ -d "$setup_path/server/panel/old_data" ];then
 	mv -f $setup_path/server/panel/old_data/default.db $setup_path/server/panel/data/default.db
@@ -442,7 +443,6 @@ if [ -d "$setup_path/server/panel/old_data" ];then
 fi
 
 rm -f panel.zip
-rm -rf $setup_path/server/bt-panel-$github_Tag/*
 
 if [ ! -f $setup_path/server/panel/tools.py ];then
 	echo -e "\033[31mERROR: Failed to download, please try again!\033[0m";
