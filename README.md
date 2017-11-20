@@ -1,7 +1,7 @@
-# 宝塔面板（BT Panel）
+# BT Panel
 
 <center>
-    <img src="https://www.bt.cn/bbs/newsimg/5.3.jpg" alt="宝塔面板">
+    <img src="https://www.bt.cn/bbs/newsimg/5.3.jpg" alt="bt-panel">
 </center>
 
 简单好用的 Linux/Windows 面板。
@@ -12,13 +12,15 @@ Linux版请确保纯净系统安装（支持 CentOS、Ubuntu、Debian、Fedora�
 Windows版支持 2003(x86)/2008(x64)/2012/2016 系统，支持Web端与软件端同步管理，QQ群及论坛技术支持
 一键创建网站、FTP、数据库；安全管理，文件管理，PHP多版本共存及切换；ASP+ASPX+PHP+MYSQL+MSSQL05/08+mariaDB+FTP。
 
+Windows版请查看：[Windows面板](https://www.bt.cn/download/windows.html)
+
 # 环境要求
 
 ## Linux面板环境要求
 
-- 宝塔Linux面板支持的系统有（CentOS、Ubuntu、Debian、Fedora）；
+- 支持 CentOS、Ubuntu、Debian、Fedora 系统；
 - 确保是干净的操作系统，没有安装过其它环境带的 Apache/Nginx/php/MySQL 等程序；
-- 内存要求最低128MB，推荐512MB以上，纯面板约占系统10MB内存；
+- 内存要求最低128MB，推荐 512MB 以上，纯面板约占系统 10MB 内存；
 - 如果以上条件不能满足，将无法安装成功和使用，请安装前注意核查；
 
 ## Windows面板环境要求
@@ -58,7 +60,7 @@ cd bt-panel
 bash install.sh
 ```
 
-## 更新命令（仅限3.X/4.X面板使用！不支持2.X面板）
+## 升级更新
 
 ```
 cd /www/server/panel
