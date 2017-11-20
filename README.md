@@ -61,7 +61,7 @@ bash install.sh
 ## 更新命令（仅限3.X/4.X面板使用！不支持2.X面板）
 
 ```
-cd www/server/panel
+cd /www/server/panel
 sh update.sh 5.3.0
 ```
 
