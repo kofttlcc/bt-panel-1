@@ -182,7 +182,7 @@ firewall-cmd --reload
 
 ## 端口未放行
 
-以下云服务商，安装宝塔后需开端口，不开启将无法使用。
+以下云服务商，安装面板后需开端口，不开启将无法使用。
 
 - 腾讯云：https://www.bt.cn/bbs/thread-1229-1-1.html
 - 阿里云：https://www.bt.cn/bbs/thread-2897-1-1.html
