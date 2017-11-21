@@ -730,4 +730,4 @@ function WarningTo(to_url,def){
 	});
 }
 
-//GetWarning();
+GetWarning();

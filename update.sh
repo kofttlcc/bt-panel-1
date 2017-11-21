@@ -21,13 +21,11 @@ if [ "$nodeAddr" == "" ];then
 	nodeAddr=$HK
 fi
 
-download_Url=https://github.com/Vultur/bt-panel
+download_Url=http://$nodeAddr:5880
 
-wget -T 5 -O panel.zip $download_Url/archive/bt-panel-$1.zip
+wget -T 5 -O panel.zip $download_Url/install/updateTest/LinuxPanel-$1.zip
 
 unzip -o panel.zip -d $setup_path/server/ > /dev/null
-mv -f $setup_path/server/bt-panel-$github_Tag/* $setup_path/server/panel
-rm -rf $setup_path/server/bt-panel-$github_Tag
 rm -f panel.zip
 cd $setup_path/server/panel/
 python -m compileall $setup_path/server/panel/
