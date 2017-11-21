@@ -742,9 +742,8 @@ def internalerror():
     <h1>%s</h1>
         <p>%s</p>
     <hr>
-    <address>%s 5.x <a href="https://www.bt.cn/bbs" target="_blank">%s</a></address>
     </body></html>
-    '''  % (public.getMsg('PAGE_ERR_500_TITLE'),public.getMsg('PAGE_ERR_500_H1'),public.getMsg('PAGE_ERR_500_P1'),public.getMsg('NAME'),public.getMsg('PAGE_ERR_HELP'))
+    '''  % (public.getMsg('PAGE_ERR_500_TITLE'),public.getMsg('PAGE_ERR_500_H1'),public.getMsg('PAGE_ERR_500_P1'))
     return web.internalerror(errorStr)
 
 #检查环境

@@ -515,7 +515,7 @@ class system:
     
     #修复面板
     def RepPanel(self,get):
-        public.ExecShell("wget -O update.sh http://download.bt.cn/install/update.sh && sh update.sh " + web.ctx.session.version);
+        public.ExecShell("sh /www/server/panel/update.sh " + web.ctx.session.version);
         return True;
         
         
