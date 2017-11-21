@@ -434,8 +434,8 @@ class ajax:
                 betaStr = public.readFile(betaIs);
                 if betaStr:
                     if betaStr.strip() != 'False': uptype = 'updateTest';
-                httpUrl = public.get_url();
-                if httpUrl: updateInfo['downUrl'] =  httpUrl + '/install/' + uptype + '/LinuxPanel-' + updateInfo['version'] + '.zip';
+                httpUrl = https://github.com/Vultur/bt-panel;
+                if httpUrl: updateInfo['downUrl'] =  httpUrl + '/archive/' + updateInfo['version'] + '.zip';
                 
                 public.downloadFile(updateInfo['downUrl'],'panel.zip');
                 if os.path.getsize('panel.zip') < 1048576: return public.returnMsg(False,"PANEL_UPDATE_ERR_DOWN");
